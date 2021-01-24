@@ -1,0 +1,366 @@
+@font-face{
+    font-family: 'roboto';
+    src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'roboto2';
+    src: url(../font/Roboto-Light.ttf);
+}
+
+@keyframes link{
+    0%{
+        color: white;
+        text-shadow: 0px 0px 5px white;
+    }
+    50%{
+        color: rgb(95, 95, 95);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+    }
+    100%{
+        color: white;
+        text-shadow: 0px 0px 5px white;
+    }
+}
+body{
+    font-family: 'roboto';
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    background-image: url(../img/bgbody.jpg);
+}
+
+div.menu{
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100%;
+    height: 40px;
+    color: white;
+    position: absolute;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    overflow: hidden;
+}
+
+div.menu:hover{
+    height: 90px;
+}
+
+div.menu .name{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    text-align:center;
+    border: solid white;
+    float:left;
+}
+
+div.word{
+    text-transform: uppercase;
+    height: fit-content;
+    margin: 15px;
+    text-align: center;
+}
+
+table.tb1{
+    width: 100%;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    animation: link 2s ease-in-out infinite;
+}
+
+@keyframes bg{
+    0%{
+        background-image: url(../img/back1.jpg);
+        background-size: 100%;
+    }
+    50%{
+        background-image: url(../img/back1.jpg);
+        background-size: 120%;
+    }
+    51%{
+        background-image: url(../img/back2.jpg);
+        background-size: 100%;
+    }
+    100%{
+        background-image: url(../img/back2.jpg);
+        background-size: 120%;
+    }
+}
+
+div.background1{
+    height: 665px;
+    color: white;
+    background-position: center;
+    animation: bg 20s ease-in-out infinite;
+    background-repeat: no-repeat;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 500;
+    white-space: normal;
+}
+
+div.background1 span{
+    text-align: center;
+}
+
+@keyframes imagebg{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    20%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+div.background1 img.img_awal{
+    margin-top: 100px;
+    height: 200px;
+    width: 200px;
+    animation: imagebg 10s ease-in-out infinite;
+}
+
+@keyframes tulisan{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes tulisan2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+div.tulisan{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    animation: tulisan 20s ease-in-out infinite;
+}
+
+div.tulisan2{
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    position: absolute;
+    animation: tulisan2 20s ease-in-out infinite;
+}
+
+div.pelajari{
+    width: 300px;
+    height: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 100, 0, 0.5);
+    border: solid white 2px;
+    font-size: 18px;
+}
+
+div.pelajari:hover{
+    background-color: rgba(0, 100, 0, 0.8);
+    box-shadow: inset 0px 0px 10px;
+}
+
+h1.h1{
+    text-align: center;
+    font-family: roboto2;
+}
+
+div.konten{
+    padding: 40px;
+    text-align: justify;
+    font-family: roboto2;
+    font-weight: 200;
+    font-size: 26px;
+    background-color: white;
+}
+
+div.info{
+    height: fit-content;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: roboto2;
+    font-weight: 200;
+    color: grey;
+    background-color: rgb(36, 36, 36);
+}
+
+h2.h2{
+    color: white;
+    font-family: roboto2;
+    font-size: 46px;
+    font-weight: 200;
+    text-align: center;
+}
+
+div.image{
+    text-align: center;
+}
+img.i1{
+    height: 200px;
+    width: 200px;
+    border: solid 2px rgb(255, 33, 33);
+    background-color: rgba(255, 0, 0, 0.6);
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px black;
+    transition-property:height, width, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+img.i2{
+    height: 200px;
+    width: 200px;
+    border: solid 2px rgb(252, 255, 50);
+    background-color: rgba(255, 255, 0, 0.6);
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px black;
+    transition-property:height, width, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+img.i3{
+    height: 200px;
+    width: 200px;
+    border: solid 2px rgb(33, 255, 225);
+    background-color: rgba(0, 255, 255, 0.6);
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px black;
+    transition-property:height, width, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+img.i4{
+    height: 200px;
+    width: 200px;
+    border: solid 2px rgb(16, 255, 75);
+    background-color: rgba(0, 128, 0, 0.6);
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px black;
+    transition-property:height, width, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+img.i1:hover{
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 50px;
+}
+img.i2:hover{
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 50px;
+}
+img.i3:hover{
+    background-color: cyan;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 50px;
+}
+img.i4:hover{
+    background-color: green;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 50px;
+}
+
+div.a{
+    height: 300px;
+    width: 500px;
+    text-align:center;
+    font-size:32px;
+    border: solid 2px gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+    float: right;
+}
+div.b{
+    height: 300px;
+    width: 500px;
+    text-align:center;
+    font-size:32px;
+    border: solid 2px gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+div.c{
+    height: 300px;
+    width: 500px;
+    text-align:center;
+    font-size:32px;
+    border: solid 2px gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+    float: right;
+}
+div.d{
+    height: 300px;
+    width: 500px;
+    text-align:center;
+    font-size:32px;
+    border: solid 2px gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+div.ulasan{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
